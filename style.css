@@ -3,7 +3,7 @@
     src: url(Zain-Bold.ttf);
 }
 
-::-webkit-scrollbar {
+.element::-webkit-scrollbar {
     display: none;
 }  
 
