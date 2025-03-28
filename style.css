@@ -15,7 +15,7 @@ body{
 
 /* TOP BAR */
 
-#top-bar{   
+#top-bar{ 
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 145px;
@@ -72,9 +72,40 @@ body{
     background-repeat: no-repeat;
     background-position-x: right;
     position: absolute;
-    background-image: url(assets/info-background/infobg.svg);
+    background-image: url(assets/info-background/emptyinfo.svg);
     width: 925px;
     height: 749px;
+}
+
+/* INSIDE INFO AREA */
+
+#music-area{
+    margin-left: 35px;
+    margin-top: 632px;
+}
+
+.play-btn{
+    width: 100px;
+    height: 100px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(assets/buttons/start-btn.svg);
+}
+
+.play-btn:hover{
+    background-image: url(assets/buttons/start-btn-off.svg);
+}
+
+.stop-btn{
+    width: 100px;
+    height: 100px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(assets/buttons/stop-btn.svg);
+}
+
+.stop-btn:hover{
+    background-image: url(assets/buttons/stop-btn-off.svg);
 }
 
 /* ARTISTS CLASSES */
@@ -95,7 +126,6 @@ body{
 }
 
 .fagata:hover{
-    margin-top: 120px;
     background-image: url(assets/artists-choose/fagata-1.svg);
 }
 
@@ -121,7 +151,6 @@ body{
 }
 
 .nirvana:hover{
-    margin-top: 30px;
     background-image: url(assets/artists-choose/nirvana-1.svg);
 }
 
