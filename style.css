@@ -3,6 +3,10 @@
     src: url(Zain-Bold.ttf);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}  
+
 body{
     height: 100vh;
     background-color: #1D1D1D;
