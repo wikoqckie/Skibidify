@@ -10,4 +10,3 @@
 ![image](https://github.com/user-attachments/assets/3ba8e0cd-b867-4e45-827e-942d7aa77e68)
 
 # GitHub został użyty do tego projektu w celu zoptymalizowania pracy i ułatwienia dostępu do plików strony.
-## Link do repozytorium GitHub: https://github.com/wikoqckie/Skibidify
