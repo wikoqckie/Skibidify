@@ -70,9 +70,10 @@ body{
 #info-area{
     margin-top: 30px;
     background-repeat: no-repeat;
+    background-position-x: right;
     position: absolute;
     background-image: url(assets/info-background/infobg.svg);
-    width: 918px;
+    width: 925px;
     height: 749px;
 }
 
