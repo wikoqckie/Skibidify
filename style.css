@@ -52,6 +52,26 @@ body{
     color: #555555;
 }
 
+/* INFO (ON RIGHT) */
+
+#info-container{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    margin-left: 850px;
+    width: 54%;
+}
+
+#info-area{
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(assets/info-background/infobg.svg);
+    width: 918px;
+    height: 749px;
+}
+
 /* ARTISTS CLASSES */
 
 .button-choose{
