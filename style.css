@@ -42,3 +42,76 @@ body{
     width: 850px;
     background-color: rgba(0, 0, 0, 0.312);
 }
+
+#top-artists{
+    position: absolute;
+    padding-left: 49px;
+    padding-top: 30px;
+    font-size: 64px;
+    font-family: main;
+    color: #555555;
+}
+
+/* ARTISTS CLASSES */
+
+.button-choose{
+    cursor: pointer;
+    margin-left: 39px;
+    width: 222px;
+    height: 297px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.fagata{
+    margin-top: 120px;
+    background-image: url(assets/artists-choose/fagata.svg);
+}
+
+.fagata:hover{
+    margin-top: 120px;
+    background-image: url(assets/artists-choose/fagata-1.svg);
+}
+
+.palion{
+    background-image: url(assets/artists-choose/palion.svg);
+}
+
+.palion:hover{
+    background-image: url(assets/artists-choose/palion-1.svg);
+}
+
+.genzie{
+    background-image: url(assets/artists-choose/genzie.svg);
+}
+
+.genzie:hover{
+    background-image: url(assets/artists-choose/genzie-1.svg);
+}
+
+.nirvana{
+    margin-top: 30px;
+    background-image: url(assets/artists-choose/nirvana.svg);
+}
+
+.nirvana:hover{
+    margin-top: 30px;
+    background-image: url(assets/artists-choose/nirvana-1.svg);
+}
+
+.mfdoom{
+    background-image: url(assets/artists-choose/mfdoom.svg);
+}
+
+.mfdoom:hover{
+    background-image: url(assets/artists-choose/mfdoom-1.svg);
+}
+
+.travisscott{
+    background-image: url(assets/artists-choose/travisscott.svg);
+}
+
+.travisscott:hover{
+    background-image: url(assets/artists-choose/travisscott-1.svg);
+}
