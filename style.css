@@ -80,9 +80,16 @@ body{
     background-repeat: no-repeat;
     background-position-x: right;
     position: absolute;
-    background-image: url(assets/info-background/emptyinfo.svg);
     width: 925px;
     height: 749px;
+}
+
+.empty-info{
+    background-image: url(assets/info-background/emptyinfo.svg);
+}
+
+.full-info{
+    background-image: url(assets/info-background/infobg.svg);
 }
 
 /* INSIDE INFO AREA */
@@ -90,6 +97,43 @@ body{
 #music-area{
     margin-left: 35px;
     margin-top: 632px;
+}
+
+/* INFO */
+
+#big-photo{
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 295px;
+    height: 290px;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+/* PHOTOS-BIG */
+
+.fagata-big{
+    background-image: url(assets/artists-big/fagata-big.png);
+}
+
+.palion-big{
+    background-image: url(assets/artists-big/palion-big.png);
+}
+
+.genzie-big{
+    background-image: url(assets/artists-big/genzie-big.png);
+}
+
+.nirvana-big{
+    background-image: url(assets/artists-big/nirvana-big.png);
+}
+
+.mfdoom-big{
+    background-image: url(assets/artists-big/mfdoom-big.png);
+}
+
+.travisscott-big{
+    background-image: url(assets/artists-big/travisscott-big.png);
 }
 
 /* MUSIC AREA */
