@@ -13,6 +13,12 @@ const nirvana = document.querySelector(".nirvana")
 const mfdoom = document.querySelector(".mfdoom")
 const travisscott = document.querySelector(".travisscott")
 
+// INFO ID'S
+
+const infoName = document.getElementById("info-name")
+const infoInfo = document.getElementById("info-txt")
+const infoText = document.getElementById("text-txt")
+
 // ARTISTS BUTTONS FUNCTIONALITY
 
 function infoFull(){
@@ -27,40 +33,78 @@ function infoFull(){
     infoArea.classList.remove("empty-info")
 }
 
+function setInfo(photo, name, songTitle, info, text){
+    bigFoto.classList.add(photo)
+    songName.innerText = songTitle
+    infoName.innerText = name
+    infoInfo.innerText = info
+    infoText.innerText = text
+}
+
 fagata.addEventListener("click", () => {
     infoFull()
-    songName.innerText = "Fagata X Lil Gnar - Kubki"
-    bigFoto.classList.add("fagata-big")
+    setInfo(
+        "fagata-big", // PHOTO
+        "Fagata", // NAME
+        "Fagata X Lil Gnar - Kubki", // SONG NAME
+        "wlasc. Agata Fak urodzona: 24.07.2000", // INFO
+        "Influencerka, ktora probuje swoich sil w muzyce, tworzac utwory w stylu rap/pop. Jej piosenki maja nowoczesne brzmienie, mocne bity i chwytliwe refreny, czesto nawiazujac do jej zycia oraz swiata influencerow. Jednym z jej najpopularniejszych utworow jest Plug, ktory zdobyl duza popularnosc na YouTube i platformach streamingowych. Jej muzyka laczy elementy autotune’u i internetowego stylu, charakterystycznego dla wielu tworcow z mediow spolecznosciowych." // TEXT
+    )
 })
 
 palion.addEventListener("click", () => {
     infoFull()
-    songName.innerText = "♪ PALION - ZIELONE feat. NeoN ♪"
-    bigFoto.classList.add("palion-big")
+    setInfo(
+        "palion-big", // PHOTO
+        "Palion", // NAME
+        "♪ PALION - ZIELONE feat. NeoN ♪", // SONG NAME
+        "Palion, własc. Pawel Palion urodzony: 17.12.2001", // INFO
+        "Palion to popularny twórca internetowy i artysta muzyczny. Jego kanał na YouTube sledzi miliony fanów, a filmy z challenge'ami, vlogami i rozrywka zdobywaja milionowe wyswietlenia. Jako muzyk osiagnał duze sukcesy, zyskujac popularnosc dzieki hitom, takim jak “Zielone”" // TEXT
+    )
 })
 
 genzie.addEventListener("click", () => {
     infoFull()
-    songName.innerText = "GENZIE - GENZIARA"
-    bigFoto.classList.add("genzie-big")
+    setInfo(
+        "genzie-big", // PHOTO
+        "Genzie", // NAME
+        "GENZIE - GENZIARA", // SONG NAME
+        "Zespól muzyczny / Twórcy internetowi", // INFO
+        "Genzie to grupa influencerow powiazana z Ekipa Holding, ktora oprocz tworzenia tresci lifestyle’owych i wyzwan na YouTube, zajmuje sie takze muzyka. Ich utwory to glownie energiczne, nowoczesne kawalki w stylu pop/rap, czesto z elektronicznym brzmieniem i chwytliwymi refrenami. Piosenki Genzie sa skierowane do mlodszej widowni i nawiazuja do internetowego stylu zycia. Wydali kilka singli, ktore zdobyly popularnosc na YouTube." // TEXT
+    )
 })
 
 nirvana.addEventListener("click", () => {
     infoFull()
-    songName.innerText = "Nirvana - Come As You Are"
-    bigFoto.classList.add("nirvana-big")
+    setInfo(
+        "nirvana-big", // PHOTO
+        "Nirvana", // NAME
+        "Nirvana - Come As You Are", // SONG NAME
+        "Zespól muzyczny", // INFO
+        "Nirvana to amerykanski zespol grunge'owy, ktory zdobyl ogromna popularnosc w latach 90-tych. Zostal zalozony w 1987 roku przez Kurta Cobaina i Krista Novoselica w Aberdeen, Washington. Nirvana stala sie symbolem pokolenia grunge, laczac surowe brzmienie rocka z emocjonalnymi tekstami. Ich najbardziej znanym albumem jest Nevermind (1991), ktory zawiera hit Smells Like Teen Spirit. Zespol zdobyl miano ikony kultury muzycznej." // TEXT
+    )
 })
 
 mfdoom.addEventListener("click", () => {
     infoFull()
-    songName.innerText = "MF DOOM - One Beer"
-    bigFoto.classList.add("mfdoom-big")
+    setInfo(
+        "mfdoom-big", // PHOTO
+        "MF DOOM", // NAME
+        "MF DOOM - One Beer", // SONG NAME
+        "wlasc. Daniel Dumile urodzony: 9.01.1971", // INFO
+        "MF Doom, wlasciwie Daniel Dumile, byl brytyjskim raperem i producentem muzycznym, znanym z maski, ktora nosil podczas wystepow i wizerunku superzlego bohatera. Jego muzyka laczyla elementy hip-hopu, jazzu i eksperymentalnych brzmien. Doom byl czlonkiem takich projektow jak KMD oraz jego solowa tworcza postac MF Doom, znana z albumow takich jak Operation: Doomsday (1999) czy Madvillainy (2004) – kolaboracji z Madlibem." // TEXT
+    )
 })
 
 travisscott.addEventListener("click", () => {
     infoFull()
-    songName.innerText = "Travis Scott - FE!N (ft. Playboi Carti)"
-    bigFoto.classList.add("travisscott-big")
+    setInfo(
+        "travisscott-big", // PHOTO
+        "Travis Scott", // NAME
+        "Travis Scott - FE!N (ft. Playboi Carti)", // SONG NAME
+        "wlasc. Jacques Webster II urodzony: 30.04.1992", // INFO
+        "Travis Scott, wlasciwie Jacques Webster II, to amerykanski raper, producent muzyczny i projektant mody. Jego muzyka laczy elementy hip-hopu, trapu i muzyki elektronicznej, a jego albumy, takie jak Astroworld (2018), zdobyly ogromna popularnosc. Scott znany jest z unikalnego stylu, energetycznych wystepów na zywo oraz wspólpracy z wieloma artystami, m.in. z Kylie Jenner, z która ma dziecko." // TEXT
+    )
 })
 
 // PLAY & STOP BTN
