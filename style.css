@@ -221,6 +221,30 @@ body{
     background-image: url(assets/time-line/timeline0.svg);
 }
 
+.a{
+    background-image: url(assets/time-line/timeline1.svg);
+}
+
+.b{
+    background-image: url(assets/time-line/timeline2.svg);
+}
+
+.c{
+    background-image: url(assets/time-line/timeline3.svg);
+}
+
+.d{
+    background-image: url(assets/time-line/timeline4.svg);
+}
+
+.e{
+    background-image: url(assets/time-line/timeline5.svg);
+}
+
+.f{
+    background-image: url(assets/time-line/timeline6.svg);
+}
+
 /* ARTISTS CLASSES */
 
 .button-choose{

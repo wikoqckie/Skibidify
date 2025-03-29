@@ -1,8 +1,10 @@
+// MAIN IDS
 const playStopBtn = document.getElementById("play-stop-btn")
 const infoArea = document.getElementById("info-area")
 
 const songName = document.getElementById("song-name")
 const bigFoto = document.getElementById("big-photo")
+const audio = document.getElementById("audio")
 
 // ARTISTS BUTTONS ID
 
@@ -19,9 +21,16 @@ const infoName = document.getElementById("info-name")
 const infoInfo = document.getElementById("info-txt")
 const infoText = document.getElementById("text-txt")
 
+// TIMELINE
+
+const time = document.querySelector(".time-line")
+
 // ARTISTS BUTTONS FUNCTIONALITY
 
 function infoFull(){
+    playStopBtn.classList.remove("stop-btn")
+    playStopBtn.classList.add("play-btn")
+
     bigFoto.classList.remove("fagata-big")
     bigFoto.classList.remove("palion-big")
     bigFoto.classList.remove("genzie-big")
@@ -33,7 +42,8 @@ function infoFull(){
     infoArea.classList.remove("empty-info")
 }
 
-function setInfo(photo, name, songTitle, info, text){
+function setInfo(audioPath, photo, name, songTitle, info, text){
+    audio.src = audioPath
     bigFoto.classList.add(photo)
     songName.innerText = songTitle
     infoName.innerText = name
@@ -44,6 +54,7 @@ function setInfo(photo, name, songTitle, info, text){
 fagata.addEventListener("click", () => {
     infoFull()
     setInfo(
+        "songs/fagata.mp3", // AUDIO PATH
         "fagata-big", // PHOTO
         "Fagata", // NAME
         "Fagata X Lil Gnar - Kubki", // SONG NAME
@@ -55,6 +66,7 @@ fagata.addEventListener("click", () => {
 palion.addEventListener("click", () => {
     infoFull()
     setInfo(
+        "songs/palion.mp3", // AUDIO PATH
         "palion-big", // PHOTO
         "Palion", // NAME
         "♪ PALION - ZIELONE feat. NeoN ♪", // SONG NAME
@@ -66,6 +78,7 @@ palion.addEventListener("click", () => {
 genzie.addEventListener("click", () => {
     infoFull()
     setInfo(
+        "songs/genzie.mp3", // AUDIO PATH
         "genzie-big", // PHOTO
         "Genzie", // NAME
         "GENZIE - GENZIARA", // SONG NAME
@@ -77,6 +90,7 @@ genzie.addEventListener("click", () => {
 nirvana.addEventListener("click", () => {
     infoFull()
     setInfo(
+        "songs/nirvana.mp3", // AUDIO PATH
         "nirvana-big", // PHOTO
         "Nirvana", // NAME
         "Nirvana - Come As You Are", // SONG NAME
@@ -88,6 +102,7 @@ nirvana.addEventListener("click", () => {
 mfdoom.addEventListener("click", () => {
     infoFull()
     setInfo(
+        "songs/mfdoom.mp3", // AUDIO PATH
         "mfdoom-big", // PHOTO
         "MF DOOM", // NAME
         "MF DOOM - One Beer", // SONG NAME
@@ -99,6 +114,7 @@ mfdoom.addEventListener("click", () => {
 travisscott.addEventListener("click", () => {
     infoFull()
     setInfo(
+        "songs/travisscott.mp3", // AUDIO PATH
         "travisscott-big", // PHOTO
         "Travis Scott", // NAME
         "Travis Scott - FE!N (ft. Playboi Carti)", // SONG NAME
@@ -110,11 +126,39 @@ travisscott.addEventListener("click", () => {
 // PLAY & STOP BTN
 
 playStopBtn.addEventListener("click", () => {
+
+    if(playStopBtn.classList.contains("play-btn")){
+        audio.volume = 0.7
+        audio.play()
+    }else{
+        audio.pause()
+    }
+
     if(playStopBtn.classList.contains("play-btn")){
         playStopBtn.classList.add("stop-btn")
         playStopBtn.classList.remove("play-btn")
     }else{
         playStopBtn.classList.remove("stop-btn")
         playStopBtn.classList.add("play-btn")
+    }
+})
+
+// TIMELINE UPDATE
+
+audio.addEventListener("timeupdate", () => {
+    percTime = audio.currentTime / audio.duration * 100
+
+    if(percTime > 14 && percTime < 15){
+        time.classList.add("a")
+    }else if(percTime > 28 && percTime < 29){
+        time.classList.add("b")
+    }else if(percTime > 42 && percTime < 43){
+        time.classList.add("c")
+    }else if(percTime > 57 && percTime < 58){
+        time.classList.add("d")
+    }else if(percTime > 71 && percTime < 72){
+        time.classList.add("e")
+    }else if(percTime > 97 && percTime < 98){
+        time.classList.add("f")
     }
 })
