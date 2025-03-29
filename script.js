@@ -27,7 +27,18 @@ const time = document.querySelector(".time-line")
 
 // ARTISTS BUTTONS FUNCTIONALITY
 
+function resetTimeline(){
+    time.classList.remove("a")
+    time.classList.remove("b")
+    time.classList.remove("c")
+    time.classList.remove("d")
+    time.classList.remove("e")
+    time.classList.remove("f")
+}
+
 function infoFull(){
+    resetTimeline()
+
     playStopBtn.classList.remove("stop-btn")
     playStopBtn.classList.add("play-btn")
 
