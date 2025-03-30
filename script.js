@@ -15,6 +15,11 @@ const nirvana = document.querySelector(".nirvana")
 const mfdoom = document.querySelector(".mfdoom")
 const travisscott = document.querySelector(".travisscott")
 
+// TOP BAR ANIMATION
+
+const logo = document.getElementById("logo")
+const logoDiv = document.getElementById("top-bar")
+
 // INFO ID'S
 
 const infoName = document.getElementById("info-name")
@@ -173,3 +178,15 @@ audio.addEventListener("timeupdate", () => {
         time.classList.add("f")
     }
 })
+
+// SCROLL ANIMATION
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 220) {
+        logo.classList.add("small-logo")
+        logoDiv.classList.add("small")
+    }else{
+        logo.classList.remove("small-logo")
+        logoDiv.classList.remove("small")
+    }
+});

@@ -15,23 +15,33 @@ body{
 
 /* TOP BAR */
 
-#top-bar{ 
+.full{ 
     z-index: 99;
     position: fixed;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.385);
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 145px;
+    transition: 150ms ease;
+}
+
+.full-logo{
+    padding-top: 10px;
+    transition: 150ms ease;
+}
+
+.small{
+    height: 60px;
+}
+
+.small-logo{
+    margin-top: -40px;
     scale: 0.5;
 }
 
 #top-bar-under{ 
     width: 100%;
     height: 145px;
-}
-
-#logo{
-    padding-top: 10px;
 }
 
 /* MAIN CONTENT */
