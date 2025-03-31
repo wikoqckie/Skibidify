@@ -6,6 +6,10 @@ const songName = document.getElementById("song-name")
 const bigFoto = document.getElementById("big-photo")
 const audio = document.getElementById("audio")
 
+// BIG FOTO CLASS
+
+const bigFotoClass = document.querySelector(".empty")
+
 // ARTISTS BUTTONS ID
 
 const fagata = document.querySelector(".fagata")
@@ -143,19 +147,21 @@ travisscott.addEventListener("click", () => {
 
 playStopBtn.addEventListener("click", () => {
 
-    if(playStopBtn.classList.contains("play-btn")){
-        audio.volume = 0.7
-        audio.play()
-    }else{
-        audio.pause()
-    }
+    if(audio.src != 0){
+        if(playStopBtn.classList.contains("play-btn")){
+            audio.volume = 0.7
+            audio.play()
+        }else{
+            audio.pause()
+        }
 
-    if(playStopBtn.classList.contains("play-btn")){
-        playStopBtn.classList.add("stop-btn")
-        playStopBtn.classList.remove("play-btn")
-    }else{
-        playStopBtn.classList.remove("stop-btn")
-        playStopBtn.classList.add("play-btn")
+        if(playStopBtn.classList.contains("play-btn")){
+            playStopBtn.classList.add("stop-btn")
+            playStopBtn.classList.remove("play-btn")
+        }else{
+            playStopBtn.classList.remove("stop-btn")
+            playStopBtn.classList.add("play-btn")
+        }
     }
 })
 
@@ -181,8 +187,8 @@ audio.addEventListener("timeupdate", () => {
 
 // SCROLL ANIMATION
 
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 220) {
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 220) {
         logo.classList.add("small-logo")
         logoDiv.classList.add("small")
     }else{

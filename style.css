@@ -266,6 +266,11 @@ body{
     border: 0;
     background-repeat: no-repeat;
     background-color: transparent;
+    transition: 150ms ease;
+}
+
+.button-choose:hover{
+    scale: 1.1;
 }
 
 .fagata{
